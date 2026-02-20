@@ -2,7 +2,7 @@
 // Es necesario componentes de Shadcn/ui
 // https://ui.shadcn.com/docs/installation/vite
 
-import React, { useEffect, useReducer } from 'react';
+import React, { useEffect, useReducer, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -13,6 +13,7 @@ import { getInitialState, scrambleWordsReducer } from './reducer/scrambleWordsRe
 export const ScrambleWords = () => {
 
   const [state, dispatch] = useReducer( scrambleWordsReducer, getInitialState() );
+  const [showWords, setShowWords] = useState(true);
 
   const {
     words,
@@ -204,9 +205,13 @@ export const ScrambleWords = () => {
             Desafíate con palabras desordenadas!
             <br />
             <br />
-            <span className='text-violet-800  italic'>Tienes que ordenar las siguientes palabras:</span>
+            <span onClick={ () => (setShowWords(!showWords)) } className='text-violet-800  italic underline cursor-pointer'>{showWords? 'Mostrar palabras':'Ocultar Palabras'}</span>
             <br />
-            {words.join(', ')}
+            {
+              <span hidden={showWords}>
+                {words.join(', ')}
+              </span>
+            }
           </p>
         </div>
       </div>
