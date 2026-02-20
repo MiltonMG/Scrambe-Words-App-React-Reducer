@@ -204,6 +204,8 @@ export const ScrambleWords = () => {
             Desafíate con palabras desordenadas!
             <br />
             <br />
+            <span className='text-violet-800  italic'>Tienes que ordenar las siguientes palabras:</span>
+            <br />
             {words.join(', ')}
           </p>
         </div>

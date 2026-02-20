@@ -61,13 +61,13 @@ export const ScrambleWords = () => {
   const [errorCounter, setErrorCounter] = useState(0);
   
   // Definiendo un limite de errores
-  const [maxAllowErrors, setMaxAllowErrors] = useState(3);
+  const [maxAllowErrors] = useState(3);
   
   // Skips para saltarse una palabra
   const [skipCounter, setSkipCounter] = useState(0);
   
   // Definiendo un maximo de skips
-  const [maxSkips, setMaxSkips] = useState(3);
+  const [maxSkips] = useState(3);
 
   // Booleano para definir si el usuaio perdio
   // perder -> si tiene 3 errores
