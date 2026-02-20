@@ -205,7 +205,7 @@ export const ScrambleWords = () => {
             Desafíate con palabras desordenadas!
             <br />
             <br />
-            <span onClick={ () => (setShowWords(!showWords)) } className='text-violet-800  italic underline cursor-pointer'>{showWords? 'Mostrar palabras':'Ocultar Palabras'}</span>
+            <span onClick={ () => (setShowWords(!showWords)) } className='text-violet-800  italic underline cursor-pointer'>{showWords? 'Mostrar palabras':'Ocultar palabras'}</span>
             <br />
             {
               <span hidden={showWords}>

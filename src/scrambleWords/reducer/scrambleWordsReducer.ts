@@ -23,18 +23,12 @@ const GAME_WORDS = [
   'JAVASCRIPT',
   'TYPESCRIPT',
   'HTML',
-  'ANGULAR',
-  'SOLID',
   'NODE',
   'VUEJS',
-  'SVELTE',
   'EXPRESS',
   'MONGODB',
   'POSTGRES',
   'DOCKER',
-  'KUBERNETES',
-  'WEBPACK',
-  'VITE',
   'TAILWIND',
 ];
 
